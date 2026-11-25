@@ -138,7 +138,6 @@ export default function App() {
           <button className="save-button" onClick={markCurrentLocation} disabled={busy}>
             <span className="save-icon" aria-hidden="true">⌖</span>
             <span>{busy ? 'Buscando ubicación…' : 'Guardar dónde estacioné'}</span>
-            {!busy && <span className="save-arrow" aria-hidden="true">↗</span>}
           </button>
           <p className="privacy-note">No necesitás una cuenta. Tus lugares quedan guardados en este dispositivo.</p>
         </div>
@@ -163,6 +162,7 @@ export default function App() {
           </div>
           <span className="count-pill">{spots.length} {spots.length === 1 ? 'lugar' : 'lugares'}</span>
         </div>
+        <p className="connectivity-note">Abrir mapas externos o corregir una Ubicación requiere conexión a internet.</p>
 
         {spots.length === 0 ? (
           <div className="empty-state">
@@ -183,7 +183,7 @@ export default function App() {
                 {spot.accuracy && spot.accuracy > 50 && <p className="accuracy-note">Ubicación aproximada · margen de {Math.round(spot.accuracy)} m</p>}
                 <div className="card-actions">
                   <a className="map-link" href={externalMapUrl(spot.coordinates)}>
-                    Ver en el mapa <span aria-hidden="true">↗</span>
+                    Ver en el mapa
                   </a>
                   <button className="edit-link" onClick={() => openEditor(spot)}>Corregir</button>
                 </div>

@@ -15,6 +15,6 @@ npm run dev
 npm run build
 ```
 
-Publicá el contenido de `dist/` en un hosting estático con HTTPS y fallback de rutas a `index.html`. HTTPS es necesario para que el navegador permita la geolocalización. La app es una PWA y conserva sus archivos principales para poder abrirla sin conexión después de la primera carga.
+Publicá el contenido de `dist/` en un hosting estático con HTTPS y fallback de rutas a `index.html`. HTTPS es necesario para que el navegador permita la geolocalización. La app es una PWA; su service worker precarga el documento, el manifiesto, el ícono y los recursos de producción para poder abrirla sin conexión después de la primera carga.
 
-Los estacionamientos se guardan en el almacenamiento local del navegador. No hay cuenta ni sincronización entre dispositivos. El mapa de corrección usa mosaicos de OpenStreetMap y necesita internet.
+Los estacionamientos se guardan en el almacenamiento local del navegador. No hay cuenta ni sincronización entre dispositivos. Los mapas externos y el mapa de corrección necesitan internet.

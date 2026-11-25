@@ -37,7 +37,6 @@ h1 { max-width: 430px; margin-bottom: 15px; font-size: clamp(38px, 5vw, 58px); l
 .save-button:hover { transform: translateY(-2px); background: #264533; }
 .save-button:disabled { opacity: .75; cursor: wait; }
 .save-icon { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; color: var(--forest); background: var(--lime); font-size: 23px; line-height: 1; }
-.save-arrow { margin-left: auto; font-size: 18px; color: var(--lime); }
 .privacy-note { max-width: 325px; margin: 13px 0 0; color: #788174; font-size: 11px; line-height: 1.5; }
 .hero-art { position: relative; height: 330px; margin: -15px -42px -20px -20px; border-radius: 24px; overflow: hidden; background: #d8e1ca; }
 .hero-art::before { content: ''; position: absolute; inset: 0; opacity: .4; background-image: radial-gradient(#6a815b 1px, transparent 1px); background-size: 19px 19px; }
@@ -61,6 +60,7 @@ h1 { max-width: 430px; margin-bottom: 15px; font-size: clamp(38px, 5vw, 58px); l
 .section-heading .eyebrow { margin-bottom: 6px; }
 h2 { margin-bottom: 0; font-size: clamp(23px, 3vw, 30px); letter-spacing: -.05em; }
 .count-pill { padding: 8px 11px; border-radius: 999px; background: #e8e9df; color: #64705f; font-size: 11px; font-weight: 600; }
+.connectivity-note { margin: -10px 0 18px; color: #69746b; font-size: 13px; line-height: 1.5; }
 .parking-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .parking-card { min-height: 188px; padding: 20px; display: flex; flex-direction: column; border: 1px solid #e3e4da; border-radius: 18px; background: var(--paper); }
 .parking-card.newest { border-color: #b9cea8; box-shadow: 0 7px 20px #33472a0b; }
