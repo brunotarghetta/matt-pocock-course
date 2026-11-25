@@ -210,7 +210,7 @@ export default function App() {
               </div>
               <button className="icon-button close-button" onClick={() => setEditor(null)} aria-label="Cerrar">×</button>
             </div>
-            <p className="map-help">Tocá el mapa o mové el marcador para elegir el punto exacto.</p>
+            <p className="map-help">Tocá el mapa o mové el marcador para elegir el punto exacto. El mapa necesita conexión a internet.</p>
             <MapPicker coordinates={editor.coordinates} onChange={(coordinates) => setEditor((current) => current ? { ...current, coordinates } : current)} />
             <label className="note-field">
               <span>Nota <em>· opcional</em></span>
